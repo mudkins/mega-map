@@ -7,11 +7,11 @@
 4.	Then open the file called **Airtable to NKH** that is in the GitHub folder in R (VSCode or Rstudio)
 5.	**DO THIS ONCE:**
  You need certain packages to run this code so the first time you open R in the console copy and paste: 
-      1. **install.packages(c(“googlesheets4”, “lubridate”, “tidyverse”))**
+      1. `install.packages(c(“googlesheets4”, “lubridate”, “tidyverse”))`
       2. if this doesn't run, you might have to install the packages separately:
-          1. install.packages("googlesheets4")
-          2. install.packages("lubridate")
-          3. install.packages("tidyverse")
+          1. `install.packages("googlesheets4")`
+          2. `install.packages("lubridate")`
+          3. `install.packages("tidyverse")`
           4. you might have to change the quotes to single quotes if it doesn’t work
       3. then you have to link your google account, so just follow the directions in VSCode/Rstudio, and you will have to copy and paste the confirmation link from linking your google account into your terminal
 
