@@ -1,16 +1,18 @@
 ---
-title: "Untitled"
+title: "AT_to_NKH"
+author: "Anjali Katta"
+date: "29/09/2020"
 output: html_document
 ---
 
-```{r setup, include=FALSE}
 
+```{r setup, include=FALSE}
 library(googlesheets4)
 library(lubridate)
 library(tidyverse)
 gs4_auth()
 #loading in the data - this part might be a little finicky based on the location of your file and whether or not your code editor can read single backslashes or requires double backslashes
-total_key <- "C:/Users/GarlicSauce/Downloads/services-School Meals View CSV.csv" 
+total_key <- "C:\\Users\\GarlicSauce\\Downloads\\services-School Meals View CSV.csv" 
 total <- 
   read_csv(total_key) %>% 
   mutate_at(vars(`opens_at (from schedule)`, `closes_at (from schedule)`), ~str_replace(.,"0am", "0 AM"))
